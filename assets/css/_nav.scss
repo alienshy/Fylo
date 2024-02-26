@@ -1,0 +1,27 @@
+nav{
+    width: 100%;
+    .navcon{
+        width: 100%;
+        padding: 50px 32px;
+        @include sb;
+        div{
+            width: 150px;
+            height: auto;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        ul{
+            @include center;
+            gap: 20px;
+            a{
+                color: $colordarkblue;
+                font-size: 20px;
+                font-family: $fontfamily2;
+            }
+        }
+
+    }
+}

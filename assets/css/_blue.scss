@@ -1,0 +1,90 @@
+.blue{
+    width: 100%;
+    z-index: -10000;
+    background-color:rgb(87,89,136);
+    .bluecon{
+        padding: 100px 32px;
+        display: flex;
+        justify-content: space-between;
+        .bluetext{
+            @include column;
+            gap: 20px;
+            width: 34%;
+            h1{
+                color:white;
+            }
+            p{
+                font-size: 14px;
+                color:white;
+                font-family: $fontfamily2;
+            }
+        }
+        .blueemail{
+            width: 40%;
+            @include column;
+            gap: 10px;
+            .errorexample{
+                color:white;
+            }
+            input {
+                width: 400px;
+                padding: 12px 10px;
+                outline: none;
+                border:none;
+                border-radius: 5px;
+
+            }
+            button {
+                width: 190px;
+                z-index: 2000;
+                padding: 12px 10px;
+                border: none;
+                font-size: 15px;
+                color: white;
+                transition: 0.4s ease;
+                border-radius: 5px;
+                opacity: 1;
+                background-color: rgb(47, 101, 248);
+
+                &:hover {
+                    opacity: 0.3;
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .blue{
+        .bluecon{
+            flex-direction: column;
+            gap: 50px;
+            .bluetext{
+                width: 100%;
+                justify-content: center;
+                align-items:center;
+                h1{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    width: 80%;
+
+                }
+            }
+            .blueemail{
+                width: 100%;
+                justify-content: center;
+                align-items:center;
+                gap: 10px;
+                input {
+                    width: 300px;    
+                }
+                button {
+                    width: 300px;
+    
+                }
+            }
+        }
+    }
+}
